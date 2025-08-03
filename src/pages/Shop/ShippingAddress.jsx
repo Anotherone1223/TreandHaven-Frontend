@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { loadStripe } from '@stripe/stripe-js';
 import { getBaseUrl } from '../../utils/baseURL';
 import Swal from 'sweetalert2';
-import { addUserAddress, setUserAddress } from '../../redux/features/address/AddressSlice';
+import { addUserAddress, setUserAddress } from '../../redux/features/Address/AddressSlice';
 
 const ShippingAddress = () => {
     const dispatch = useDispatch();
