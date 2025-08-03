@@ -10,8 +10,6 @@ import Register from "../components/Register";
 import PaymentSuccess from "../components/PaymentSuccess";
 import DashboardLayout from "../pages/dashboard/DashboardLayout";
 import PrivateRoute from "./PrivateRoute";
-// import UserDMain from "../pages/dashboard/user/dashboard/UserDMain";
-import UserdMain from "../pages/dashboard/user/dashboard/UserDMain";
 import UserOrder from "../pages/dashboard/user/UserOrder";
 import OrderDetails from "../pages/dashboard/user/OrderDetails";
 import UserPayments from "../pages/dashboard/user/UserPayments";
@@ -33,6 +31,7 @@ import PaymentCancel from "../components/PaymentCancel";
 import EmailVerify from "../components/EmailVerify";
 // import DeliveryPanel from "../components/Order Tracking/DeliveryPanel";
 // import OrderTracking from "../components/Order Tracking/OrderTracking";
+import UserDMain from './../pages/dashboard/user/dashboard/UserDMain';
 
 const router = createBrowserRouter([
     {
@@ -117,7 +116,7 @@ const router = createBrowserRouter([
         element: <PrivateRoute><DashboardLayout /></PrivateRoute>,
         children: [
             // user Dashboard
-            { path: '', element: <UserdMain /> },
+            { path: '', element: <UserDMain /> },
             { path: 'orders', element: <UserOrder /> },
             { path: 'payments', element: <UserPayments /> },
             { path: 'profile', element: <UserProfile /> },
