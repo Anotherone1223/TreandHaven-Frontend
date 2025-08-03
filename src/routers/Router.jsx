@@ -29,9 +29,10 @@ import TreamsAndCondition from "../components/TreamsAndCondition";
 import CustomerAddress from "../pages/dashboard/admin/customerAddress/CustomerAddress";
 import PaymentCancel from "../components/PaymentCancel";
 import EmailVerify from "../components/EmailVerify";
+import UserDMain from "../pages/dashboard/user/dashboard/UserDMain";
 // import DeliveryPanel from "../components/Order Tracking/DeliveryPanel";
 // import OrderTracking from "../components/Order Tracking/OrderTracking";
-import UserDMain from './../pages/dashboard/user/dashboard/UserDMain';
+
 
 const router = createBrowserRouter([
     {
@@ -116,7 +117,7 @@ const router = createBrowserRouter([
         element: <PrivateRoute><DashboardLayout /></PrivateRoute>,
         children: [
             // user Dashboard
-            { path: '', element: <UserDMain /> },
+            { path: '', element: <UserDMain/> },
             { path: 'orders', element: <UserOrder /> },
             { path: 'payments', element: <UserPayments /> },
             { path: 'profile', element: <UserProfile /> },
