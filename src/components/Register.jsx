@@ -48,7 +48,7 @@ const Register = () => {
 
         try {
             // Send the Google token to your backend API for registration
-            const responseData = await axios.post('http://localhost:5000/api/auth/google-register', {
+            const responseData = await axios.post('https://treand-haven-backend.vercel.app/api/auth/google-register', {
                 credential
             });
 

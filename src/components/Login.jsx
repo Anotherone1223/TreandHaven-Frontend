@@ -59,7 +59,7 @@ const Login = () => {
 
         // Send the Google token to the backend for authentication
         try {
-            const response = await axios.post('http://localhost:5000/api/auth/google-login', {
+            const response = await axios.post('https://treand-haven-backend.vercel.app/api/auth/google-login', {
                 credential: credentialResponse.credential
             });
 
